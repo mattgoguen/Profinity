@@ -1,11 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHome, faGift } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faHome, faGift);
+
+// Screen imports
+import HomeScreen from './app/screens/HomeScreen';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>My name is Matt, let's build Profinity!</Text>
-    </View>
+    <HomeScreen />
   );
 }
 
